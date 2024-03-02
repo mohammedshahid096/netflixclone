@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  & ::-webkit-scrollbar {
+    display: none;
+  }
+}
+body {
+  font-family: "Roboto", "Poppins";
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.RowWise {
+  padding: 1rem;
+  height: 15rem;
+  margin-bottom: 1.5rem;
+
+  > h2 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  main {
+    display: flex;
+    overflow-x: auto;
+    gap: 0.5rem;
+    height: 100%;
+    width: 100%;
+
+    .loader {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.Card {
+  height: 100%;
+  > img {
+    width: 180px;
+    height: 100%;
+    // transition: all transform 0.5s;
+  }
+}
+
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}

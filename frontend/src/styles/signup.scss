@@ -1,0 +1,207 @@
+.signupContainer {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  color: white;
+
+  .backgroundWrapper {
+    width: 100%;
+    height: 99vh;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100%;
+
+    nav header {
+      height: 5.6rem;
+      width: 80%;
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+      align-items: center;
+
+      .headerlogo {
+        height: 5rem;
+        width: 15rem;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .buttonOptions {
+        display: flex;
+        gap: 1.4rem;
+      }
+    }
+
+    main {
+      height: calc(100vh - 8.5rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .mainWrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        h1 {
+          font-size: 3rem;
+          font-weight: 900;
+        }
+        h4 {
+          font-size: 1.5rem;
+          font-weight: 400;
+        }
+        h6 {
+          font-size: 1.25rem;
+          font-weight: 400;
+        }
+      }
+
+      .formWrapper {
+        margin-top: 1.5rem;
+        width: 50%;
+        display: flex;
+        gap: 5px;
+
+        input {
+          background-color: rgba(0, 0, 0, 0.235);
+          color: white;
+        }
+        button {
+          width: 40%;
+          font-size: x-large;
+          font-weight: 800;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .LoginMain {
+      height: 80vh;
+      width: 30%;
+      background-color: rgba(0, 0, 0, 0.752);
+      margin: 0 auto;
+      padding: 4.5rem;
+
+      > div {
+        background-color: rgba(128, 128, 128, 0.54);
+        margin-top: 1.5rem;
+        color: white;
+
+        input {
+          color: white;
+        }
+      }
+      button {
+        width: 100%;
+        margin-top: 2rem;
+      }
+      p {
+        color: rgba(128, 128, 128, 0.61);
+        font-size: larger;
+        margin-top: 2rem;
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+#selectLanguage {
+  width: 8.5rem;
+  color: white;
+  font-size: large;
+  background-color: rgba(0, 0, 0, 0.294);
+  padding-left: 0.7rem;
+  border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 990px) {
+  .signupContainer {
+    section {
+      nav header {
+        width: 95%;
+        .headerlogo {
+          height: 3rem;
+          width: 8rem;
+        }
+
+        .buttonOptions {
+          gap: 1.4rem;
+        }
+      }
+
+      main {
+        .mainWrapper {
+          h1 {
+            font-size: 2rem;
+            font-weight: 900;
+          }
+          h4 {
+            font-size: 1.125rem;
+            font-weight: 400;
+          }
+          h6 {
+            font-size: 1.125rem;
+            font-weight: 400;
+          }
+        }
+
+        .formWrapper {
+          height: auto;
+          // width: 80%;
+          flex-direction: column;
+
+          button {
+            width: 60%;
+            margin: 3px auto;
+          }
+        }
+      }
+
+      .LoginMain {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .signupContainer {
+    section {
+      main {
+        .formWrapper {
+          width: 85%;
+
+          button {
+            width: 80%;
+          }
+        }
+      }
+
+      .LoginMain {
+        width: 80%;
+        padding: 1.6rem;
+        height: fit-content;
+      }
+    }
+  }
+  #selectLanguage {
+    display: none;
+  }
+}

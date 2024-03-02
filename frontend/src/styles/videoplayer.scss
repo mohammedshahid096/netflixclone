@@ -1,0 +1,27 @@
+.videoWrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+
+  .back {
+    padding: 1rem;
+    display: inline-block;
+    transition: all 0.5s;
+
+    svg {
+      font-size: xx-large;
+      color: white;
+      transition: all 0.7s;
+    }
+    &:hover {
+      transform: translateX(-3px);
+      svg {
+        color: tomato;
+      }
+    }
+  }
+  video {
+    width: 100%;
+    height: 95%;
+  }
+}

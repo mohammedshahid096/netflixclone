@@ -1,0 +1,64 @@
+.HomeWrapper nav header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  > img {
+    height: 100%;
+  }
+
+  > div {
+    width: 100%;
+    margin-left: 1vmax;
+
+    > a {
+      margin: 1vmax;
+      font-weight: 300;
+      font-size: 1.025rem;
+    }
+  }
+
+  section {
+    display: flex;
+
+    svg {
+      color: #f34242;
+      font-size: xx-large;
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+      border-radius: 0.5rem;
+
+      svg {
+        color: white;
+      }
+
+      input {
+        height: 80%;
+        width: 0;
+        opacity: 0;
+        visibility: hidden;
+        background-color: transparent;
+        transition: width 0.3s;
+        border: none;
+        color: white;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .show_srearch {
+      border: 1px solid white;
+      background-color: rgba(0, 0, 0, 0.6);
+      input {
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
